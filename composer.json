@@ -11,6 +11,6 @@
 	],
 	"require": {
 		"composer/installers": "~1.0",
-		"ajshort/silverstripe-gridfieldextensions": "dev-master"
+		"ajshort/silverstripe-gridfieldextensions": "~1.0.0"
 	}
 }
