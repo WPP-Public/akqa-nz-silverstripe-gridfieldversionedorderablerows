@@ -45,6 +45,9 @@ class GridFieldVersionedOrderableRows extends GridFieldOrderableRows
                 );
             }
         }
+        
+        $this->extend('onAfterReorderItems', $list);
+        
     }
     /**
      * @param DataList $list
