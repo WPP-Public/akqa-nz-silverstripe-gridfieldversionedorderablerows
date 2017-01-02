@@ -12,5 +12,8 @@
 	"require": {
 		"composer/installers": "~1.0",
 		"silverstripe-australia/gridfieldextensions": "~1.0"
+	},
+	"extra": {
+		"installer-name": "gridfieldversionedorderablerows"
 	}
 }
