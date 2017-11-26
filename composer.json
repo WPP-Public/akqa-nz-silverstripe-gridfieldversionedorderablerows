@@ -1,16 +1,20 @@
 {
 	"name": "heyday/silverstripe-gridfieldversionedorderablerows",
 	"description": "Allows Versioned Orderable Rows In GridField",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"license": "MIT",
 	"authors": [
 		{
 			"name": "Cam Spiers",
 			"email": "camspiers@gmail.com"
+		},
+		{
+			"name": "Claire Finnie",
+			"email": "claire@heyday.co.nz"
 		}
 	],
 	"require": {
 		"composer/installers": "~1.0",
-		"symbiote/silverstripe-gridfieldextensions": "~1.0"
+		"symbiote/silverstripe-gridfieldextensions": "^3.0"
 	}
 }
