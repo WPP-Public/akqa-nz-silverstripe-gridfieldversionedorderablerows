@@ -3,6 +3,8 @@
 namespace Heyday\GridFieldVersionedOrderableRows;
 
 use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
+use SilverStripe\ORM\DataList;
+use SilverStripe\ORM\DB;
 
 
 /**
@@ -50,9 +52,9 @@ class GridFieldVersionedOrderableRows extends GridFieldOrderableRows
                 );
             }
         }
-        
+
         $this->extend('onAfterReorderItems', $list);
-        
+
     }
     /**
      * @param DataList $list
