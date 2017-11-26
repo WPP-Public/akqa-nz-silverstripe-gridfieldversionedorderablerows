@@ -1,5 +1,10 @@
 <?php
 
+namespace Heyday\GridFieldVersionedOrderableRows;
+
+use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
+
+
 /**
  * Class GridFieldVersionedOrderableRows
  */
