@@ -16,7 +16,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Heyday\\GridFieldVersionedOrderableRows\\": "src/",
+			"Heyday\\GridFieldVersionedOrderableRows\\": "src/"
 		}
 	}
 }
