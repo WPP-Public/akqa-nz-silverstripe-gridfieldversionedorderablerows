@@ -1,5 +1,11 @@
 <?php
 
+namespace Heyday\GridFieldVersionedOrderableRows;
+
+use SilverStripe\ORM\DataList;
+use SilverStripe\ORM\DB;
+use Symbiote\GridFieldExtensions\GridFieldOrderableRows;
+
 /**
  * Class GridFieldVersionedOrderableRows
  */
@@ -9,6 +15,8 @@ class GridFieldVersionedOrderableRows extends GridFieldOrderableRows
      * @param       $list
      * @param array $values
      * @param array $order
+     *
+     * @throws \Exception
      */
     protected function reorderItems($list, array $values, array $order)
     {
@@ -45,12 +53,15 @@ class GridFieldVersionedOrderableRows extends GridFieldOrderableRows
                 );
             }
         }
-        
+
         $this->extend('onAfterReorderItems', $list);
-        
+
     }
+
     /**
      * @param DataList $list
+     *
+     * @throws \Exception
      */
     protected function populateSortValues(DataList $list)
     {
